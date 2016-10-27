@@ -18,8 +18,8 @@ def index(request):
 		if u[0].grpid is None: 
 			return render(request,'Game/sportform.html')
 		else:
-			groups = GroupDetails.objects.filter(grpid = u[0].grpid.grpid)
-			users = UserProfile.objects.filter(grpid = u[0].grpid.grpid)
+			groups = GroupDetails.objects.filter(grpid = u.grpid.grpid)
+			users = UserProfile.objects.filter(grpid = u.grpid.grpid)
 			print("HELOO")
 			print(groups)
 			print("HELOO")
